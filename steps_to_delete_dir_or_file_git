@@ -1,0 +1,135 @@
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo (master)
+$ git clone https://github.com/Rockycta/automobile-configrepo.git
+Cloning into 'automobile-configrepo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo (master)
+$ ls
+automobile-configrepo/  backup/  inventory-mgmt-service.yml.txt
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo (master)
+$ cd automobile-configrepo/
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo/automobile-configrepo (main)
+$ ls -ltr
+total 1
+-rw-r--r-- 1 Rocky 197121 262 Dec 25 16:53 inventory-mgmt-service.yml
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo/automobile-configrepo (main)
+$ ls
+inventory-mgmt-service.yml
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo/automobile-configrepo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo/automobile-configrepo (main)
+$ ls -ltr
+total 1
+-rw-r--r-- 1 Rocky 197121 262 Dec 25 16:53 inventory-mgmt-service.yml
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo/automobile-configrepo (main)
+$ vi inventory-mgmt-service.yml
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo/automobile-configrepo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   inventory-mgmt-service.yml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo/automobile-configrepo (main)
+$ rm inventory-mgmt-service.yml
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo/automobile-configrepo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    inventory-mgmt-service.yml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo/automobile-configrepo (main)
+$ git add .
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo/automobile-configrepo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    inventory-mgmt-service.yml
+
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo/automobile-configrepo (main)
+$ git commit -m "deleted inventory-mgmt-service.yml from main"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Rocky@Rakesh.(none)')
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo/automobile-configrepo (main)
+$ git config user.email rocky.cta@gmail.com
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo/automobile-configrepo (main)
+$ git config user.name rockycta
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo/automobile-configrepo (main)
+$ git commit -m "deleted inventory-mgmt-service from main branch"
+[main d56712e] deleted inventory-mgmt-service from main branch
+ 1 file changed, 14 deletions(-)
+ delete mode 100644 inventory-mgmt-service.yml
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo/automobile-configrepo (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 215 bytes | 215.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Rockycta/automobile-configrepo.git
+   c08f1bc..d56712e  main -> main
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo/automobile-configrepo (main)
+$ cd ..
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo (master)
+$ git init
+Initialized empty Git repository in G:/Spring Practice workspace/sms_microservices/automobile-configrepo/.git/
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo (master)
+$ ls -ltr
+total 1
+-rw-r--r-- 1 Rocky 197121 262 Dec 20 17:48 inventory-mgmt-service.yml.txt
+drwxr-xr-x 1 Rocky 197121   0 Dec 25 16:50 backup/
+drwxr-xr-x 1 Rocky 197121   0 Dec 25 16:58 automobile-configrepo/
+
+Rocky@Rakesh MINGW64 /g/Spring Practice workspace/sms_microservices/automobile-configrepo (master)
+$
